@@ -1,0 +1,19 @@
+
+.auth_title {
+    @apply text-white text-[48px] font-semibold mt-[113px] text-center mb-[52px] cursor-default
+}
+
+.wrapper {
+    @apply ml-[270px] mb-[30px] flex-col flex
+}
+
+.btn {
+    @apply w-[340px] text-[17px] font-semibold text-white h-[54px] rounded-[12px] bg-blue-500 ml-[330px]
+}
+
+
+.btn:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 14px #1c7c92;
+    --wails-draggable: no-drag;
+}

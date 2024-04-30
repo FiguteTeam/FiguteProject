@@ -1,0 +1,8 @@
+.myInput {
+    @apply my-[15px] h-[62px] w-[450px] rounded-[48px] border-[2px] border-gray-700 bg-transparent pb-1 pl-[23px] text-white;
+}
+
+.myInput:focus {
+    border-color: #1c7c92;
+    box-shadow: 0 0 10px #1c7c92;
+}
