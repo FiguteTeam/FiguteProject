@@ -1,6 +1,14 @@
 
 .auth_title {
-    @apply text-white text-[48px] font-semibold mt-[113px] text-center mb-[52px] cursor-default
+    @apply  text-white text-[48px] font-semibold  text-center mb-[52px] cursor-default
+}
+
+.container {
+    @apply mt-[143px]
+}
+
+.logo {
+    @apply w-[140px] mb-4 ml-[430px] mt-[-80px]
 }
 
 .wrapper {
