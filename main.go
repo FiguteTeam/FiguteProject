@@ -5,6 +5,7 @@ import (
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/assetserver"
+	"github.com/wailsapp/wails/v2/pkg/options/windows"
 )
 
 //go:embed all:frontend/dist
@@ -14,24 +15,27 @@ func main() {
 	app := NewApp()
 
 	err := wails.Run(&options.App{
-		Title:         "CoreCraft",
+		Title:         "FiguteApp",
+		Width:         1100,
+		Height:        700,
 		DisableResize: true,
+		Frameless:     true,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
-		Frameless:        true,
-		CSSDragProperty:  "--wails-draggable",
-		CSSDragValue:     "drag",
-		BackgroundColour: &options.RGBA{R: 27, G: 38, B: 54, A: 2},
-		OnStartup:        app.startup,
-
+		CSSDragProperty: "--wails-draggable",
+		CSSDragValue:    "drag",
+		OnStartup:       app.startup,
 		Bind: []interface{}{
 			app,
+		},
+		Windows: &windows.Options{
+			WebviewIsTransparent: true,
+			WindowIsTranslucent:  true,
 		},
 	})
 
 	if err != nil {
 		println("Error:", err.Error())
 	}
-
 }

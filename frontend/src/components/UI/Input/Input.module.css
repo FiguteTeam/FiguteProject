@@ -1,5 +1,6 @@
 .myInput {
-    @apply my-[15px] h-[62px] w-[450px] rounded-[48px] border-[2px] border-gray-700 bg-transparent pb-1 pl-[23px] text-white;
+    @apply my-[15px] h-[62px] w-[450px] rounded-[48px] border-[2px] border-gray-700 bg-transparent pb-1 px-[23px] text-white;
+    --wails-draggable: no-drag;
 }
 
 .myInput:focus {

@@ -1,0 +1,11 @@
+.wrapper {
+    --wails-draggable: drag;
+}
+
+.handleClose {
+    @apply ml-[1043px] mt-[45px] relative cursor-pointer inline-block duration-500 hover:animate-spin;
+}
+
+.handleHide {
+    @apply mt-[55px] ml-[-45px] cursor-pointer inline-block duration-500 py-1 hover:-translate-y-1 hover:scale-90;
+}

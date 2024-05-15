@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply m-0 p-0;
+    scrollbar-width: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+:root {
+    background-image: linear-gradient(to bottom, #030F22, #2A3547);
+    height: 100%;
+}
+
+

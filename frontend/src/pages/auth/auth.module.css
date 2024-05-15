@@ -1,27 +1,33 @@
 
 .auth_title {
-    @apply  text-white text-[48px] font-semibold  text-center mb-[52px] cursor-default
+    @apply  text-white text-[48px] font-semibold  text-center mb-[52px] cursor-default;
 }
 
 .container {
-    @apply mt-[143px]
+    @apply mt-[143px];
+    --wails-draggable: drag;
 }
 
 .logo {
-    @apply w-[140px] mb-4 ml-[430px] mt-[-80px]
+    @apply w-[140px] mb-4 ml-[480px] mt-[-110px] duration-300 hover:-translate-y-1 hover:scale-110;
 }
 
 .wrapper {
-    @apply ml-[270px] mb-[30px] flex-col flex
+    @apply ml-[330px] mb-[30px] flex-col flex;
 }
 
 .btn {
-    @apply w-[340px] text-[17px] font-semibold text-white h-[54px] rounded-[12px] bg-blue-500 ml-[330px]
+    @apply px-[80px] py-4 text-[17px] font-semibold text-white rounded-[12px] bg-blue-500 ml-[410px]
 }
 
 
 .btn:hover {
     transition: 0.3s;
     box-shadow: 0 0 14px #1c7c92;
+    --wails-draggable: no-drag;
+}
+
+.infoApp {
+    @apply modal-box bg-gray-800;
     --wails-draggable: no-drag;
 }

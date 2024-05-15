@@ -1,21 +1,17 @@
-
-import './App.css';
 import Auth from "./pages/auth/Auth.tsx";
-import {
-    WindowCenter,
-    WindowSetSize
-} from "../wailsjs/runtime/runtime.js";
-
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./pages/home/Home.tsx";
 
 function App() {
 
-    WindowSetSize(1100, 700)
-    WindowCenter()
-
     return (
-        <>
-            <Auth />
-        </>
+
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Auth />} />
+                <Route path="/home" element={<Home />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
